@@ -1,0 +1,43 @@
+
+<div class="col-md-6">
+  <div class="card">
+      <div class="header">
+          <h2 class="title" style="margin-left:250px;">categoeries</h2>
+      </div>
+      <div class="content">
+
+<div class="row">
+<div id="table" class="col-md-12">
+<table class="table table-striped">
+<thead>
+@foreach($categories as $value)
+<th>id</th>
+<th>name</th>
+<th> status</th>
+<th>image</th>
+<th>decription</th>
+
+</thead>
+
+<tr>
+<td>{{ $value->id }}</td>
+<td>{{ $value->name}}</td>
+<td >{{$value->status}}</td>
+
+<td ><img src="{{url('images/Products')}}/{{$value->image }}" style="height:80px; width:80px;"></td>
+<td>{{$value->desc}}</td>
+
+</tr>
+@endforeach
+<tr>
+<td colspan="7"><h1 style="text-align:center;"></h1></td>
+
+</tr>
+
+</table>
+
+</div>
+</div>
+</div>
+</div>
+</div>  -->
